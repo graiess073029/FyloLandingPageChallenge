@@ -1,306 +1,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
-html:root{
+html:root {
     --VeryDarkBlue: hsl(243, 87%, 12%);
     --DesaturatedBlue: hsl(238, 22%, 44%);
     --BrightBlue: hsl(224, 93%, 58%);
     --ModerateCyan: hsl(170, 45%, 43%);
     --LightGrayishBlue: hsl(240, 75%, 98%);
-    --LightGray: hsl(0, 0%, 75%) ;
+    --LightGray: hsl(0, 0%, 75%);
 }
 
 
-*{
+* {
+    max-width: 100%;
     margin: 0;
     padding: 0%;
     border: 0ch;
     list-style: none;
     text-decoration: none;
     outline: none;
+
 }
 
+p,a,input,label,li{
+    font-family: "Open Sans";
+}
 
-html,body,.root{
+h1,button,h2,h3,h4,h5,h6 {
+    font-family: "Raleway";
+}
+
+html,
+body,
+.root {
     width: 100vw;
     min-height: 100vh;
+    background-color:rgba(222, 222, 222, 0.1);
+}
+
+.root_inner {
+    background-color: white;
+}
+
+.root{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width : 1200px) {
 
-    .root_inner{
+    .root_inner {
+        max-width: 1500px;
         width: calc(100%);
         display: flex;
         flex-direction: column;
     }
-    
-    .top{
+
+    .top {
         display: flex;
         flex-direction: column;
-        gap: 120px;
+        gap: 100px;
     }
-    
-    .nav-bar{
-        padding: 70px 80px 70px 80px;
+
+    .nav-bar {
+        padding: 70px 80px 0px 80px;
         display: flex;
         justify-content: space-between;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         display: flex;
         gap: 50px;
     }
-    
-    .nav-bar ul.links li{
-        font-family: 'RaleWay';
+
+    .nav-bar ul.links li {
+        font-family: 'Raleway';
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv{
-        padding: 0px 80px 180px 80px;
+
+    section.adv {
+        padding: 0px 80px 100px 80px;
         overflow-x: visible;
         display: flex;
         gap: 60px;
         align-items: center;
     }
-    
-    img.illustration{
-        width: 570px;
-        height: 400px;
+
+    img.illustration {
+        width: calc(500px + 5vw);
     }
-    
-    section.adv article{
+
+    section.adv article {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 2.9em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 1.1em;
-        font-family: "Open Sans";
+        width: 80%;
         color: var(--DesaturatedBlue);
     }
-    
-    section.adv article div{
+
+    section.adv article div {
         display: flex;
         gap: 20px;
     }
-    
-    section.adv article div input{
+
+    section.adv article div input {
         font-size: 0.9em;
         width: 300px;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.adv article div button{
-        box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.49);
+
+    section.adv article div button {
+        box-shadow: 5px 5px 9px -5px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 5px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
         background-color: var(--BrightBlue);
-        padding: 15px 60px 15px 60px;
+        padding: 15px 80px 15px 80px;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.prod{
+
+    section.prod {
         display: flex;
         flex-direction: column;
-        gap: -0px;
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
-        padding: 120px 80px 120px 80px;
+
+    section.prod .container {
+        padding: 80px;
         background-color: #F8F8FE;
         display: flex;
         align-items: center;
         gap: 80px;
     }
-    
-    section.prod .container article{
+
+    section.prod 
+    {
         display: flex;
         flex-direction: column;
-        gap: 50px;
     }
-    
-    section.prod article h1{
-        font-family: 'Open Sans';
+
+    section.prod article h1 {
         font-weight: 700;
         font-size: 2.4em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article p{
+
+    section.prod article p {
+        text-align: c;
         width: fit-content;
         font-size: 1em;
-        font-family: "Open Sans";
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         width: fit-content;
         border-bottom: 1px solid var(--ModerateCyan);
     }
-    
-    .howfyloworks svg{
+
+    .howfyloworks svg {
         display: flex;
         align-self: center;
         justify-self: center;
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
-    .howfyloworks:hover > a img{
+
+    .howfyloworks:hover>a img {
         fill: hsl(170, 45%, 60%);
     }
-    
-    .howfyloworks:hover{
+
+    .howfyloworks:hover {
         border-bottom: 1px solid hsl(170, 45%, 60%);
     }
-    
-    
-    .mobile{
+
+
+    .mobile {
         display: none;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 290px;
         height: 180px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.9em;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         font-size: 0.8em;
-        font-family: 'RaleWay';
+
         font-weight: 700;
     }
-    
-    section.prod .comment .profile p{
+
+    section.prod .comment .profile p {
         font-size: 0.6em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod .comment .profile .info{
+
+    section.prod .comment .profile .info {
         gap: 0px;
         justify-content: space-between;
     }
-    
-    section.message{
-        background-color : var(--DesaturatedBlue);
-        padding: 110px 120px 80px 90px;
+
+    section.message {
+        background-color: var(--DesaturatedBlue);
+        padding: 100px 120px 70px 90px;
         display: flex;
         justify-content: center;
         gap: 250px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         font-size: 2.6em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         line-height: 25px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 1em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         justify-content: center;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 460px;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 200px;
         height: 50px;
@@ -308,367 +330,366 @@ html,body,.root{
         align-items: center;
         justify-content: center;
     }
-    
-    section.message  button:hover , section.adv  button:hover{
+
+    section.message button:hover,
+    section.adv button:hover {
         background-color: hsl(224, 93%, 65%)
     }
-    
-    footer.contact{
-        padding: 90px 260px 85px 70px;
+
+    footer.contact {
+        padding: 70px 260px 85px 70px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         justify-content: space-between;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1em;
         display: flex;
         flex-direction: row;
         gap: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         display: flex;
         flex-direction: row;
         gap: 15px;
         height: min-content;
     }
-    
-    .contact ul li:hover , .contact ul li:hover > a{
-        color: var(--BrightBlue) ;
+
+    .contact ul li:hover,
+    .contact ul li:hover>a {
+        color: var(--BrightBlue);
         cursor: pointer;
     }
-    
-    ul.social-media li:hover > svg{
+
+    ul.social-media li:hover>svg {
         fill: var(--BrightBlue);
     }
-    
-    ul.social-media li:hover{
+
+    ul.social-media li:hover {
         border: 1px solid var(--BrightBlue);
     }
-    
-    #insta:hover > svg{
+
+    #insta:hover>svg {
         fill: url(#myGradient);
     }
-    
-    #insta:hover{
-        border: 1px solid #FCAF45 ;
+
+    #insta:hover {
+        border: 1px solid #FCAF45;
     }
-    
-    
+
+
 }
 
 @media screen and (min-width : 1024px) and (max-width : 1199px) {
 
-    .root_inner{
+    .root_inner {
         width: calc(100%);
         display: flex;
         flex-direction: column;
     }
-    
-    .top{
+
+    .top {
         display: flex;
         flex-direction: column;
         gap: 120px;
     }
-    
-    .nav-bar{
+
+    .nav-bar {
         padding: 70px 70px 70px 70px;
         display: flex;
         justify-content: space-between;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         display: flex;
         gap: 50px;
     }
-    
-    .nav-bar ul.links li{
-        font-family: 'RaleWay';
+
+    .nav-bar ul.links li {
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv{
+
+    section.adv {
         padding: 0px 70px 180px 70px;
         overflow-x: visible;
         display: flex;
         gap: 60px;
         align-items: center;
     }
-    
-    img.illustration{
+
+    img.illustration {
         width: 400px;
     }
-    
-    section.adv article{
+
+    section.adv article {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 2.3em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 1em;
-        font-family: "Open Sans";
+
         color: var(--DesaturatedBlue);
     }
-    
-    section.adv article div{
+
+    section.adv article div {
         display: flex;
         gap: 20px;
     }
-    
-    section.adv article div input{
+
+    section.adv article div input {
         font-size: 0.9em;
         width: 270px;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.adv article div button{
-        box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.49);
+
+    section.adv article div button {
+        box-shadow: 5px 5px 9px -2px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 5px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         padding: 15px 50px 15px 50px;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.prod{
+
+    section.prod {
         display: flex;
         flex-direction: column;
-        gap: -0px;
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
+
+    section.prod .container {
         padding: 120px 80px 120px 80px;
         background-color: #F8F8FE;
         display: flex;
         align-items: center;
         gap: 80px;
     }
-    
-    section.prod .container article{
+
+    section.prod 
+    {
         display: flex;
         flex-direction: column;
-        gap: 50px;
     }
-    
-    section.prod article h1{
-        font-family: 'Open Sans';
+
+    section.prod article h1 {
         font-weight: 700;
         font-size: 1.8em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         width: fit-content;
         font-size: 0.9em;
-        font-family: "Open Sans";
+
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         width: fit-content;
         border-bottom: 1px solid var(--ModerateCyan);
     }
-    
-    .howfyloworks svg{
+
+    .howfyloworks svg {
         display: flex;
         align-self: center;
         justify-self: center;
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
-    .howfyloworks:hover > a img{
+
+    .howfyloworks:hover>a img {
         fill: hsl(170, 45%, 60%);
     }
-    
-    .howfyloworks:hover{
+
+    .howfyloworks:hover {
         border-bottom: 1px solid hsl(170, 45%, 60%);
     }
-    
-    
-    .mobile{
+
+
+    .mobile {
         display: none;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 290px;
         height: 180px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.9em;
         line-height: 23px;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         font-size: 0.8em;
-        font-family: 'RaleWay';
         font-weight: 700;
     }
-    
-    section.prod .comment .profile p{
+
+    section.prod .comment .profile p {
         font-size: 0.6em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod .comment .profile .info{
+
+    section.prod .comment .profile .info {
         gap: 0px;
         justify-content: space-between;
     }
-    
-    section.message{
-        background-color : var(--DesaturatedBlue);
+
+    section.message {
+        background-color: var(--DesaturatedBlue);
         padding: 110px 90px 80px 90px;
         display: flex;
         justify-content: center;
         gap: 50px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         font-size: 2.6em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         line-height: 25px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 0.95em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         justify-content: center;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 460px;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 200px;
         height: 50px;
@@ -676,124 +697,125 @@ html,body,.root{
         align-items: center;
         justify-content: center;
     }
-    
-    section.message  button:hover , section.adv  button:hover{
+
+    section.message button:hover,
+    section.adv button:hover {
         background-color: hsl(224, 93%, 65%)
     }
-    
-    footer.contact{
+
+    footer.contact {
         padding: 90px 180px 85px 70px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         justify-content: space-between;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1em;
         display: flex;
         flex-direction: row;
         gap: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         display: flex;
         flex-direction: row;
         gap: 15px;
         height: min-content;
     }
-    
-    .contact ul li:hover , .contact ul li:hover > a{
-        color: var(--BrightBlue) ;
+
+    .contact ul li:hover,
+    .contact ul li:hover>a {
+        color: var(--BrightBlue);
         cursor: pointer;
     }
-    
-    ul.social-media li:hover > svg{
+
+    ul.social-media li:hover>svg {
         fill: var(--BrightBlue);
     }
-    
-    ul.social-media li:hover{
+
+    ul.social-media li:hover {
         border: 1px solid var(--BrightBlue);
     }
-    
-    #insta:hover > svg{
+
+    #insta:hover>svg {
         fill: url(#myGradient);
     }
-    
-    #insta:hover{
-        border: 1px solid #FCAF45 ;
+
+    #insta:hover {
+        border: 1px solid #FCAF45;
     }
-    
-    
+
+
 }
 
 @media screen and (max-width : 1023px) {
-    .root_inner{
+    .root_inner {
         width: calc(100%);
         padding: 50px 0px 0px 0px;
         display: flex;
         flex-direction: column;
     }
-    
-    .top{
+
+    .top {
         padding: 0px 50px 0px 50px;
         display: flex;
         flex-direction: column;
         gap: 120px;
     }
-    
-    .nav-bar{
+
+    .nav-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         display: flex;
         gap: 30px;
     }
-    
-    .nav-bar ul.links li{
+
+    .nav-bar ul.links li {
         font-size: 1.1em;
-        font-family: 'RaleWay';
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv{
+
+    section.adv {
         padding: 0px 0px 180px 0px;
         overflow-x: visible;
         display: flex;
@@ -801,68 +823,67 @@ html,body,.root{
         gap: 60px;
         align-items: center;
     }
-    
-    img.illustration{
+
+    img.illustration {
         max-width: 100%;
         height: auto;
     }
-    
-    section.adv article{
+
+    section.adv article {
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 2.9em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 1.5em;
-        font-family: "Open Sans";
+
         color: var(--DesaturatedBlue);
     }
-    
-    section.adv article div{
+
+    section.adv article div {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    
-    section.adv article div input{
+
+    section.adv article div input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.adv article div button{
-        box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.49);
+
+    section.adv article div button {
+        box-shadow: 5px 5px 9px -2px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 5px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         padding: 15px 60px 15px 60px;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.prod{
+
+    section.prod {
         display: flex;
         flex-direction: column;
-        gap: -0px;
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
+
+    section.prod .container {
         padding: 120px 50px 120px 50px;
         background-color: #F8F8FE;
         display: flex;
@@ -870,127 +891,127 @@ html,body,.root{
         align-items: center;
         gap: 80px;
     }
-    
-    section.prod .container article{
+
+    section.prod 
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
     }
-    
-    section.prod article h1{
-        font-family: 'Open Sans';
+
+    section.prod article h1 {
         font-weight: 700;
         text-align: center;
         font-size: 1.7em;
+        padding-bottom: 20px;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         width: fit-content;
         font-size: 1.4em;
-        font-family: "Open Sans";
+        text-align: center;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         flex-direction: row !important;
         justify-content: center;
         width: 100%;
     }
 
-    .howfyloworks a{
+    .howfyloworks a {
         border-bottom: 1px solid var(--ModerateCyan);
 
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
+
     .howfyloworks:hover svg {
         fill: hsl(170, 45%, 60%);
     }
-        
-    .desktop{
+
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 290px;
         height: 180px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.9em;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         font-size: 0.8em;
-        font-family: 'RaleWay';
         font-weight: 700;
     }
-    
-    section.prod .comment .profile p{
+
+    section.prod .comment .profile p {
         font-size: 0.6em;
         color: var(--VeryDarkBlue);
     }
-    
-    section.prod .comment .profile .info{
+
+    section.prod .comment .profile .info {
         gap: 0px;
         justify-content: space-between;
     }
-    
-    section.message{
-        background-color : var(--DesaturatedBlue);
+
+    section.message {
+        background-color: var(--DesaturatedBlue);
         padding: 110px 120px 80px 70px;
         display: flex;
         flex-direction: column;
@@ -998,57 +1019,57 @@ html,body,.root{
         align-items: center;
         gap: 60px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         text-align: center;
         font-size: 2.4em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         text-align: center;
         line-height: 35px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 1.3em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         width: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 100%;
         height: 50px;
@@ -1057,27 +1078,27 @@ html,body,.root{
         justify-content: center;
     }
 
-    footer.contact{
+    footer.contact {
         padding: 90px 70px 100px 70px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         gap: 90px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1.3em;
         display: flex;
@@ -1086,34 +1107,34 @@ html,body,.root{
         gap: 20px;
     }
 
-    .contacts ul.pam li img{
+    .contacts ul.pam li img {
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1.3em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1121,156 +1142,161 @@ html,body,.root{
         gap: 15px;
         height: min-content;
     }
-        
+
 }
 
-@media screen and ( max-width : 520px){
-    .root_inner{
+@media screen and (max-width : 520px) {
+    .root_inner {
         padding: 50px 0px 0px 0px;
     }
-    
-    .top{
+
+    .top {
         padding: 0px 40px 0px 40px;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         gap: 25px;
     }
-    
-    .nav-bar ul.links li{
+
+    .nav-bar ul.links li {
         font-size: 1em;
     }
-    
-    section.adv{
+
+    section.adv {
         padding: 0px 0px 180px 0px;
     }
-    
-    img.illustration{
+
+    img.illustration {
         max-width: 440px;
         height: auto;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 2.3em;
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 1.3em;
     }
-    
-    
-    section.adv article div input{
+
+
+    section.adv article div input {
         font-size: 0.9em;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
+
+    section.prod .container {
         padding: 120px 40px 120px 40px;
     }
-    
-    section.prod article h1{
+
+    section.prod article h1 {
+        padding-bottom: 10px;
         font-size: 1.6em;
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         font-size: 1.15em;
+        text-align: center;
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         flex-direction: row !important;
         justify-content: center;
         width: 100%;
     }
 
-    .howfyloworks a{
+    .howfyloworks a {
         border-bottom: 1px solid var(--ModerateCyan);
 
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
+
     .howfyloworks:hover svg {
         fill: hsl(170, 45%, 60%);
     }
-        
-    .desktop{
+
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 290px;
         height: 180px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.8em;
         line-height: 22px;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         text-align: left;
         font-size: 0.8em;
     }
-    
-    
-    section.message{
+
+
+    section.message {
         padding: 110px 70px 80px 70px;
         display: flex;
         flex-direction: column;
@@ -1278,57 +1304,57 @@ html,body,.root{
         align-items: center;
         gap: 50px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         text-align: center;
         font-size: 2.1em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         text-align: center;
         line-height: 30px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 1em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         width: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 100%;
         height: 50px;
@@ -1337,27 +1363,27 @@ html,body,.root{
         justify-content: center;
     }
 
-    footer.contact{
+    footer.contact {
         padding: 90px 70px 100px 70px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         gap: 90px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1.1em;
         display: flex;
@@ -1366,34 +1392,34 @@ html,body,.root{
         gap: 20px;
     }
 
-    .contacts ul.pam li img{
+    .contacts ul.pam li img {
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1.1em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1401,218 +1427,224 @@ html,body,.root{
         gap: 15px;
         height: min-content;
     }
-        
+
 }
 
-@media screen and (min-width : 420px) and ( max-width : 459px){
-    .root_inner{
+@media screen and (min-width : 420px) and (max-width : 459px) {
+    .root_inner {
         padding: 50px 0px 0px 0px;
     }
-    
-    .top{
+
+    .top {
         padding: 0px 30px 0px 30px;
     }
 
-    .nav-bar img{
+    .nav-bar img {
         max-width: 110px;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         gap: 25px;
     }
-    
-    .nav-bar ul.links li{
+
+    .nav-bar ul.links li {
         font-size: 1em;
     }
-    
-    section.adv{
-        padding: 0px 0px 180px 0px;
+
+    section.adv {
+        padding: 0px 0px 80px 0px;
     }
-    
-    img.illustration{
+
+    img.illustration {
         max-width: 400px;
         height: auto;
     }
-    
-    section.adv article h1{
+
+    section.prod article h1 {
         font-size: 2em;
+        padding-bottom: 10px;
     }
-    
-    section.adv article p{
+
+    section.prod article p {
         font-size: 1.2em;
+        text-align: center;
+
     }
-    
-    
-    section.adv article div input{
+
+
+    section.adv article div input {
         font-size: 0.9em;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
-        padding: 120px 30px 120px 30px;
+
+    section.prod .container {
+        padding: 90px 30px 90px 30px;
     }
-    
-    section.prod article h1{
+
+    section.prod article h1 {
         font-size: 1.5em;
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         font-size: 1.1em;
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         flex-direction: row !important;
         justify-content: center;
         width: 100%;
     }
 
-    .howfyloworks a{
+    .howfyloworks a {
         border-bottom: 1px solid var(--ModerateCyan);
 
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
+
     .howfyloworks:hover svg {
         fill: hsl(170, 45%, 60%);
     }
-        
-    .desktop{
+
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 290px;
         height: 180px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.8em;
         line-height: 22px;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         text-align: left;
         font-size: 0.8em;
     }
-    
-    
-    section.message{
-        padding: 110px 70px 80px 70px;
+
+
+    section.message {
+        padding: 90px 70px 70px 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         text-align: center;
         font-size: 1.8em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         text-align: center;
         line-height: 30px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 1em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         width: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 100%;
         height: 50px;
@@ -1621,27 +1653,27 @@ html,body,.root{
         justify-content: center;
     }
 
-    footer.contact{
-        padding: 90px 70px 100px 70px;
+    footer.contact {
+        padding: 70px 70px 70px 70px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         gap: 90px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 60px;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1.1em;
         display: flex;
@@ -1650,34 +1682,34 @@ html,body,.root{
         gap: 20px;
     }
 
-    .contacts ul.pam li img{
+    .contacts ul.pam li img {
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1.1em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1685,164 +1717,168 @@ html,body,.root{
         gap: 15px;
         height: min-content;
     }
-        
+
 }
 
-@media screen and (min-width : 370px) and (max-width : 419px){
-    .root_inner{
+@media screen and (min-width : 370px) and (max-width : 419px) {
+    .root_inner {
         padding: 50px 0px 0px 0px;
     }
-    
-    .top{
+
+    .top {
         padding: 0px 30px 0px 30px;
     }
 
-    .nav-bar img{
+    .nav-bar img {
         max-width: 100px;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         gap: 20px;
     }
-    
-    .nav-bar ul.links li{
+
+    .nav-bar ul.links li {
         font-size: 0.9em;
     }
-    
-    section.adv{
-        padding: 0px 0px 180px 0px;
+
+    section.adv {
+        padding: 0px 0px 80px 0px;
     }
-    
-    img.illustration{
+
+    img.illustration {
         max-width: 330px;
         height: auto;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 1.8em;
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 1em;
     }
-    
-    
-    section.adv article div input{
+
+
+    section.adv article div input {
         font-size: 0.9em;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
+
+    section.prod .container {
         padding: 120px 30px 120px 30px;
     }
-    
-    section.prod article h1{
+
+    section.prod article h1 {
         font-size: 1.5em;
+        padding-bottom: 10px;
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         font-size: 0.9em;
+        text-align: center;
+
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         flex-direction: row !important;
         justify-content: center;
         width: 100%;
     }
 
-    .howfyloworks a{
+    .howfyloworks a {
         border-bottom: 1px solid var(--ModerateCyan);
 
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
+
     .howfyloworks:hover svg {
         fill: hsl(170, 45%, 60%);
     }
-        
-    .desktop{
+
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 230px;
         height: 160px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
 
-    section.prod article{
+    section.prod article {
         width: 100%;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.7em;
         line-height: 18px;
-        font-family: 'RaleWay';
     }
-    
-    section.prod .comment .profile{
+
+    section.prod .comment .profile {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    
-    section.prod .comment .profile img{
+
+    section.prod .comment .profile img {
         border-radius: 50%;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         text-align: left;
         font-size: 0.8em;
     }
-    
-    
-    section.message{
+
+
+    section.message {
         padding: 110px 70px 80px 70px;
         display: flex;
         flex-direction: column;
@@ -1850,57 +1886,57 @@ html,body,.root{
         align-items: center;
         gap: 50px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         text-align: center;
         font-size: 1.8em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         text-align: center;
         line-height: 30px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 1em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         width: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 100%;
         height: 50px;
@@ -1909,29 +1945,29 @@ html,body,.root{
         justify-content: center;
     }
 
-    footer.contact{
-        padding: 90px 0px 100px 40px;
+    footer.contact {
+        padding: 70px 0px 70px 40px;
         background-color: var(--VeryDarkBlue);
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        gap: 90px;
+        gap: 50px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 60px;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1.1em;
         display: flex;
@@ -1940,34 +1976,34 @@ html,body,.root{
         gap: 20px;
     }
 
-    .contacts ul.pam li img{
+    .contacts ul.pam li img {
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 1.1em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         width: calc(100vw - 70px);
         display: flex;
         flex-direction: row;
@@ -1975,165 +2011,172 @@ html,body,.root{
         gap: 15px;
         height: min-content;
     }
-        
+
 }
 
-@media screen and (min-width : 270px) and (max-width : 369px){
-    .root_inner{
+@media screen and (min-width : 270px) and (max-width : 369px) {
+    .root_inner {
         padding: 50px 0px 0px 0px;
     }
-    
-    .top{
+
+    .top {
         padding: 0px 20px 0px 20px;
     }
 
-    .nav-bar img{
+    .nav-bar img {
         max-width: 85px;
     }
-    
-    .nav-bar ul.links{
+
+    .nav-bar ul.links {
         gap: 20px;
     }
-    
-    .nav-bar ul.links li{
+
+    .nav-bar ul.links li {
         font-size: 0.7em;
     }
-    
-    section.adv{
+
+    section.adv {
         padding: 0px 0px 180px 0px;
     }
-    
-    img.illustration{
+
+    img.illustration {
         max-width: 210px;
         height: auto;
     }
-    
-    section.adv article h1{
+
+    section.adv article h1 {
         font-size: 1.7em;
     }
-    
-    section.adv article p{
+
+    section.adv article p {
         font-size: 0.9em;
     }
-    
-    
-    section.adv article div input{
+
+
+    section.adv article div input {
         font-size: 0.9em;
     }
-    
-    section.adv article div input::placeholder{
+
+    section.adv article div input::placeholder {
         color: var(--LightGray);
     }
-    
-    img.curved{
+
+    img.curved {
         width: 100%;
     }
-    
-    section.prod .container{
+
+    section.prod .container {
+        width: -webkit-fill-available;
         padding: 120px 20px 120px 20px;
     }
-    
-    section.prod article h1{
+
+    section.prod article h1 {
         font-size: 1.1em;
+        padding-bottom: 10px;
     }
-    
-    section.prod article p{
+
+    section.prod article p {
         font-size: 0.8em;
+        text-align: center;
+
     }
-    
-    section.prod article div{
+
+    section.prod article div {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
-    section.prod article a{
+
+    section.prod article a {
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
-    
-    
-    section.prod article a img{
+
+
+    section.prod article a img {
         width: 25px;
         height: auto;
     }
-    
-    
-    section.prod article a p{
+
+
+    section.prod article a p {
         color: var(--ModerateCyan);
     }
-    
-    .howfyloworks{
+
+    .howfyloworks {
         flex-direction: row !important;
         justify-content: center;
         width: 100%;
     }
 
-    .howfyloworks a{
+    .howfyloworks a {
         border-bottom: 1px solid var(--ModerateCyan);
 
     }
-    
-    .howfyloworks:hover > a p{
+
+    .howfyloworks:hover>a p {
         color: hsl(170, 45%, 60%);
     }
-    
+
     .howfyloworks:hover svg {
         fill: hsl(170, 45%, 60%);
     }
-        
-    .desktop{
+
+    .desktop {
         display: none;
     }
 
-    .mobile{
+    .mobile {
         display: block;
     }
-    
-    section.prod .comment{
-        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+
+    section.prod .comment {
+        position: relative;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
         width: 190px;
         height: 140px;
         padding: 20px 40px 20px 30px;
-        background-color: hsl(0,0%,100%);
+        background-color: hsl(0, 0%, 100%);
         display: flex;
         flex-direction: column;
         gap: 20px;
         border-radius: 5px;
     }
 
-    section.prod article{
+    section.prod article {
         width: 100%;
     }
-    
-    section.prod .comment p{
+
+    section.prod .comment p {
         color: var(--VeryDarkBlue);
         font-size: 0.6em;
         line-height: 15px;
-        font-family: 'RaleWay';
     }
 
-    section.prod .comment .profile img{
+    section.prod .comment .profile img {
         border-radius: 50%;
         width: 25px !important;
         height: 25px !important;
     }
-    
-    section.prod .comment .profile h1{
+
+    section.prod .comment .profile h1 {
         text-align: left;
         font-size: 0.6em;
     }
 
-    section.prod .comment .profile p{
+    section.prod .comment .profile p {
         text-align: left;
         font-size: 0.5em;
     }
-    
-    
-    section.message{
+
+
+    section.message {
         padding: 110px 40px 80px 40px;
         display: flex;
         flex-direction: column;
@@ -2141,57 +2184,56 @@ html,body,.root{
         align-items: center;
         gap: 50px;
     }
-    
-    section.message .description{
+
+    section.message .description {
         gap: 30px;
     }
-    
-    section.message div{
+
+    section.message div {
         display: flex;
         flex-direction: column;
     }
-    
-    section.message .description h1{
+
+    section.message .description h1 {
         text-align: center;
         font-size: 1.3em;
-        font-family: "Open Sans";
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
     }
-    
-    section.message .description p{
+
+    section.message .description p {
         text-align: center;
         line-height: 20px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         font-size: 0.7em;
-        font-family: "RaleWay";
+        
         font-weight: 400;
     }
-    
-    section.message .email{
+
+    section.message .email {
         width: 100%;
         justify-content: center;
         flex-direction: column;
         align-items: baseline;
         gap: 35px;
     }
-    
-    section.message input{
+
+    section.message input {
         font-size: 0.9em;
         width: 100%;
         border-radius: 5px;
-        border : 1.1px solid var(--VeryDarkBlue);
+        border: 1.1px solid var(--VeryDarkBlue);
         padding: 15px 0px 15px 20px;
     }
-    
-    section.message input::placeholder{
+
+    section.message input::placeholder {
         color: var(--LightGray);
     }
-    
-    section.message  button{
-        box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.49);
+
+    section.message button {
+        box-shadow: 5px 5px 9px -4px rgba(0, 0, 0, 0.49);
         font-size: 0.9em;
         border-radius: 3px;
-        color: hsl(0,0%,100%);
+        color: hsl(0, 0%, 100%);
         background-color: var(--BrightBlue);
         width: 100%;
         height: 50px;
@@ -2200,7 +2242,7 @@ html,body,.root{
         justify-content: center;
     }
 
-    footer.contact{
+    footer.contact {
         padding: 90px 0px 100px 40px;
         background-color: var(--VeryDarkBlue);
         display: flex;
@@ -2208,21 +2250,21 @@ html,body,.root{
         align-items: baseline;
         gap: 90px;
     }
-    
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-    
-    .contacts ul{
+
+    .contacts ul {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    
-    .contacts ul.pam li a{
+
+    .contacts ul.pam li a {
         color: white;
         font-size: 1.1em;
         display: flex;
@@ -2231,34 +2273,34 @@ html,body,.root{
         gap: 20px;
     }
 
-    .contacts ul.pam li img{
+    .contacts ul.pam li img {
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul li{
-        color: hsl(0,0%,100%);
-        font-family: "Open Sans";
+
+    .contacts ul li {
+        color: hsl(0, 0%, 100%);
+
         font-weight: 400;
         font-size: 0.9em;
     }
-    
-    .contacts ul.social-media li svg{
-        fill: hsl(0,0%,100%);
+
+    .contacts ul.social-media li svg {
+        fill: hsl(0, 0%, 100%);
         width: 20px;
         height: 20px;
     }
-    
-    .contacts ul.social-media li{
+
+    .contacts ul.social-media li {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
         border-radius: 50%;
-        border: 1px solid hsl(0,0%,100%);
+        border: 1px solid hsl(0, 0%, 100%);
     }
-    
-    .contacts ul.social-media{
+
+    .contacts ul.social-media {
         width: calc(100vw - 70px);
         display: flex;
         flex-direction: row;
@@ -2266,6 +2308,5 @@ html,body,.root{
         gap: 15px;
         height: min-content;
     }
-        
-}
 
+}
